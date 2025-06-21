@@ -1,4 +1,5 @@
-import { NodeEditor, GetSchemes, ClassicPreset } from "rete";
+import { NodeEditor, ClassicPreset } from "rete";
+import { type GetSchemes } from "rete";
 import { AreaPlugin, AreaExtensions } from "rete-area-plugin";
 import {
   ConnectionPlugin,
@@ -7,7 +8,7 @@ import {
 import {
   SveltePlugin,
   Presets,
-  SvelteArea2D
+  type SvelteArea2D
 } from "rete-svelte-plugin";
 
 type Schemes = GetSchemes<

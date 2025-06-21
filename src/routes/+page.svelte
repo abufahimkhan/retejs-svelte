@@ -11,7 +11,7 @@
 	});
 </script>
 
-<div class="rete" bind:this={el} />
+<div class="rete" bind:this={el} ></div>
 
 
 <style>

@@ -1,7 +1,9 @@
 {
 	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
-		"module": "commonjs",
+		"module": "NodeNext",
+		"target": "ESNext",
+		"moduleResolution": "nodenext",
 		"allowJs": true,
 		"checkJs": true,
 		"esModuleInterop": true,
@@ -10,7 +12,13 @@
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
-		"preserveValueImports": false,
-		"importsNotUsedAsValues": "preserve"
-	}
+		"types": [
+			"node"
+		]
+	},
+	"include": [
+		"src",
+		"vite.config.ts",
+		"global.d.ts"
+	]
 }
